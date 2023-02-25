@@ -1,0 +1,382 @@
+/* Import Font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+}
+
+.btn{
+    padding: 7px 30px;
+    border: 0;
+    border-radius: 30px;
+}
+.btn-primary{
+    color: white;
+    background: linear-gradient(to bottom left, rgb(0, 170, 255), rgb(0, 64, 202));
+    transition: 0.5s;
+}
+.btn-primary:hover{
+    color: rgb(209, 209, 209);
+    background: linear-gradient(to top right, rgb(0, 170, 255), rgb(0, 64, 202));
+}
+.btn-primary-outline{
+    color: black;
+    border: 2px solid rgb(0, 170, 255);
+    background-color: transparent;
+    transition: 0.2s;
+}
+.btn-primary-outline:hover{
+    color: white;
+    border: 0;
+    background: linear-gradient(to top right, rgb(0, 170, 255), rgb(0, 64, 202));
+}
+.rounded{
+    border-radius: 50%;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.container{
+    width: 100%;
+}
+.container .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.container .row .col-12{
+    flex-grow: 12;
+}
+.container .row .col-11{
+    flex-grow: 11;
+}
+.container .row .col-10{
+    flex-grow: 10;
+}
+.container .row .col-9{
+    flex-grow: 9;
+}
+.container .row .col-8{
+    flex-grow: 8;
+}
+.container .row .col-7{
+    flex-grow: 7;
+}
+.container .row .col-6{
+    flex-grow: 6;
+}
+.container .row .col-5{
+    flex-grow: 5;
+}
+.container .row .col-4{
+    flex-grow: 4;
+}
+.container .row .col-3{
+    flex-grow: 3;
+}
+.container .row .col-2{
+    flex-grow: 2;
+}
+.container .row .col-1{
+    flex-grow: 1;
+}
+
+/* Navigasi */
+.navigasi{
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom left, rgb(0, 170, 255), rgb(0, 64, 202));
+    position: fixed;
+    top: 0;
+}
+.navigasi ol{
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.navigasi ol.mobile{
+    display: none;
+}
+.navigasi ol li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navigasi ol li a{
+    display: block;
+    padding: 0 30px;
+    line-height: 70px;
+    text-decoration: none;
+    font-style: none;
+    color: white;
+}
+.navigasi ol li a:hover{
+    background-color:  rgb(0, 64, 202);
+    color: rgb(255, 202, 45);
+    font-weight: 500;
+}
+/* ====================== */
+
+/* Card Info */
+#card-info{
+    background-color: white;
+    margin: 90px 30px 30px 30px;
+    padding: 0 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#card-info .kiri{
+    display: flex;
+    height: 200px;
+    padding: 50px;
+}
+#card-info .kiri .identitas{
+    padding: 30px;
+    margin-right: 10px;
+}
+#card-info .kiri .identitas h1{
+    padding: 0;
+    margin: 0;
+}
+#card-info .kiri .identitas span{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#card-info .kanan{
+    height: 200px;
+    padding: 50px;
+}
+#card-info .kanan table th{
+    text-align: left;
+}
+#card-info .kanan table th,
+#card-info .kanan table td{
+    padding: 7px;
+}
+/* ===================== */
+
+/* Form Input */
+#form-input{
+    background-color: white;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#form-input .form-control{
+    width: 100%;
+    margin: 10px 0;
+}
+#form-input .form-control label{
+    display: block;
+    margin-left: 15px;
+}
+#form-input .form-control input,
+#form-input .form-control textarea
+{
+    width: 97%;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 170, 255);
+}
+#form-input .form-control textarea{
+    border-radius: 20px !important;
+    padding: 10px 15px;
+}
+#form-input button{
+    margin-top: 15px;
+    width: 100%;
+}
+/* ===================== */
+
+
+
+/* ALL MOBILE */
+/* ------------------------------------- */
+@media screen and (max-width: 1280px) {
+    /* Card Info */
+    #card-info{
+        padding: 0 30px;
+    }
+    #card-info .kiri{
+        padding: 30px;
+    }
+    /* ===================== */
+}
+@media screen and (max-width: 884px) {
+    /* Navigasi */
+    .navigasi ol{
+        justify-content:center;
+    }
+    /* ====================== */
+
+    /* Card Info */
+    #card-info .kiri{
+        display: block;
+    }
+    #card-info .kiri .identitas{
+        padding: 30px;
+        margin-right: 10px;
+        text-align: right;
+    }
+    #card-info .kiri .identitas h1{
+        padding: 0;
+        margin: 0;
+    }
+    #card-info .kiri .identitas span{
+        display: block;
+        margin-bottom: 30px;
+    }
+    /* ===================== */
+}
+@media screen and (max-width: 428px) {
+    /* Navigasi */
+    .navigasi ol.desktop{
+        display: none;
+    }
+    .navigasi ol.mobile .navigasi-content{
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        background-color: rgba(0, 64, 202, 0.5);
+        box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.3);
+        animation: dropdown 0.5s ease-in-out;
+    }
+    .navigasi ol.mobile{
+        display: block;
+    }
+    .navigasi ol.mobile .menu{
+        width: 80px;
+        text-align: center;
+        float: right;
+        transition: 0.3s;
+    }
+    .navigasi ol.mobile .menu:hover{
+        background-color:  rgb(0, 64, 202);
+    }
+    .navigasi ol.mobile .menu:hover .material-symbols-rounded{
+        color: rgb(255, 202, 45);
+    }
+    .navigasi ol.mobile .menu:hover .navigasi-content{
+        display: block;
+    }
+    .navigasi ol.mobile .menu .material-symbols-rounded{
+        color: #eaeaea;
+        line-height: 70px;
+    }
+    .navigasi ol li a{
+        line-height: 50px;
+    }
+
+    @keyframes dropdown {
+        0%{
+            right: -100px;
+            opacity: 0;
+        }
+        100%{
+            right: 0;
+            opacity: 1;
+        }
+    }
+    /* ================== */
+    
+    /* Card Info */
+    #card-info .kiri .hero-image{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #card-info .kiri .hero-image img{
+        float: none !important;
+        width: 80%;
+    }
+    #card-info .kiri .identitas{
+        padding: 10px;
+        text-align: center;
+    }
+    #card-info .kiri .identitas h1{
+        font-size: 16px;
+    }
+    #card-info .kiri .identitas span{
+        margin-bottom: 10px;
+    }
+    #card-info .kiri .identitas button{
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    #card-info .kanan{
+        height: 130px;
+        margin-top: 100px;
+        padding: 50px 0;
+    }
+    #card-info .kanan table{
+        font-size: 12px;
+    }
+    #card-info .kanan table th,
+    #card-info .kanan table td{
+        padding: 4px;
+    }
+    /* ==================================== */
+    
+    /* Form Input */
+    #form-input{
+        font-size: 12px;
+        padding: 30px;
+    }
+    #form-input .form-control input,
+    #form-input .form-control textarea
+    {
+        width: 90%;
+    }
+    /* =================== */
+}
+@media screen and (max-width: 360px) {
+    /* Card Info */
+    #card-info{
+        margin: 80px 10px 10px 10px;
+    }
+    #card-info .kiri .identitas button{
+        padding: 5px 30px;
+        width: 150px;
+    }
+    #card-info .kanan{
+        height: 80px;
+    }
+    #card-info .kanan table{
+        font-size: 11px;
+    }
+    #card-info .kanan table th,
+    #card-info .kanan table td{
+        padding: 0;
+    }
+    /* ================= */
+
+    /* FOrm Input */
+    #form-input{
+        margin: 10px;
+        padding: 20px 30px 30px 30px;
+    }
+    /* ================== */
+}
+
+
+
+/* ===================================== */

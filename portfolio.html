@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Ekstrnal CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,200" />
+    
+</head>
+<body>
+    <nav class="navigasi">
+        <ol class="desktop">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">INVENTORY</a></li>
+        </ol>
+        <ol class="mobile">
+            <div class="menu"><span class="material-symbols-rounded">menu</span>
+                <div class="navigasi-content">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">INVENTORY</a></li>
+                </div>
+            </div>
+        </ol>
+    </nav>
+
+    <!-- Section Card Info -->
+    <section id="card-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 kiri">
+                    <div class="hero-image">
+                        <img src="foto.jpg" alt="Foto Ku" class="rounded float-left">
+                    </div>
+                    <div class="identitas">
+                        <h1>Agung Dwi Sahputra</h1>
+                        <span>Web Developer</span>
+                        <button class="btn btn-primary">Kontak</button>
+                        <button class="btn btn-primary-outline">Resume</button>
+                    </div>
+                </div>
+                <div class="col-8 kanan">
+                    <table>
+                        <tr>
+                            <th>Availability</th>
+                            <td>: Full Time</td>
+                        </tr>
+                        <tr>
+                            <th>Usia</th>
+                            <td>: 20</td>
+                        </tr>
+                        <tr>
+                            <th>Lokasi</th>
+                            <td>: Jakarta, Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Pengalaman</th>
+                            <td>: 3</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>: agungdwisahputra@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Input Section -->
+    <section id="form-input">
+        <form action="#" method="post">
+            <div class="form-control">
+                <label for="nama">Nama</label>
+                <input name="nama" type="text" id="nama" maxlength="100" placeholder="Masukan nama anda">
+            </div>
+            <div class="form-control">
+                <label for="role">Role</label>
+                <input name="role" type="text" id="role" maxlength="50" placeholder="Masukan role anda">
+            </div>
+            <div class="form-control">
+                <label for="availability">Availability</label>
+                <input name="availability" type="text" id="availability" placeholder="Masukan availability anda">
+            </div>
+            <div class="form-control">
+                <label for="usia">Usia</label>
+                <input name="usia" type="number" id="usia" min="1" max="200" placeholder="Masukan usia anda">
+            </div>
+            <div class="form-control">
+                <label for="lokasi">Lokasi</label>
+                <textarea name="lokasi" id="lokasi" cols="10" rows="3" placeholder="Masukan lokasi anda"></textarea>
+            </div>
+            <div class="form-control">
+                <label for="experience">Years Experience</label>
+                <input name="experience" type="number" min="0" max="100" id="experience" placeholder="Berapa lama pengelaman anda">
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email" placeholder="Masukan email anda">
+            </div>
+            <!-- <input type="submit" value="SUMBIT"> -->
+            <button class="btn btn-primary" type="submit">SUBMIT</button>
+        </form>
+    </section>
+
+</body>
+</html>
