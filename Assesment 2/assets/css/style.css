@@ -37,6 +37,17 @@ body{
     border: 0;
     background: linear-gradient(to top right, rgb(0, 170, 255), rgb(0, 64, 202));
 }
+.btn-warning-outline{
+    color: black;
+    border: 2px solid rgb(255, 200, 0);
+    background-color: transparent;
+    transition: 0.2s;
+}
+.btn-warning-outline:hover{
+    color: white;
+    border: 0;
+    background: linear-gradient(to top right, rgb(255, 200, 0), rgb(255, 179, 0));
+}
 .rounded{
     border-radius: 50%;
 }
@@ -135,6 +146,23 @@ body{
 }
 /* ====================== */
 
+.message{
+    width: 30%;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    min-width: 200px;
+    padding: 8px 15px;
+}
+.message.danger{
+    background-color: red;
+    color: white;
+}
+.message.success{
+    background-color: green;
+    color: white;
+}
+
 /* Card Info */
 #card-info{
     background-color: white;
@@ -153,6 +181,9 @@ body{
     margin-right: 10px;
 }
 #card-info .kiri .identitas h1{
+    background: linear-gradient(90deg, rgb(0, 64, 202),rgb(0, 170, 255), rgb(0, 64, 202));
+    -webkit-background-clip: text;
+    color: transparent;
     padding: 0;
     margin: 0;
 }
@@ -175,21 +206,15 @@ body{
 /* ===================== */
 
 /* Form Input */
+#form-input.hide{
+    display: none;
+}
 #form-input{
     background-color: white;
     margin: 30px;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-#form-input .message{
-    width: 30%;
-    min-width: 200px;
-    padding: 8px 15px;
-}
-#form-input .message.danger{
-    background-color: red;
-    color: white;
 }
 #form-input .form-control{
     width: 100%;
