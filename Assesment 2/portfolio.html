@@ -52,7 +52,7 @@
                         <h1 id="nama">Agung Dwi Sahputra</h1>
                         <span id="role">Web Developer</span>
                         <button class="btn btn-primary">Kontak</button>
-                        <button class="btn btn-primary-outline">Resume</button>
+                        <button class="btn btn-primary-outline">Resume</button><br>
                         <button id="edit" class="btn btn-warning-outline">Edit</button>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
             const lokasi_form = document.getElementById("form-lokasi").value;
             const experience_form = document.getElementById("form-experience").value;
             const email_form = document.getElementById("form-email").value;
-            
+
             if (nama_form == '' || role_form == '' || availability_form == '' || usia_form == '' || lokasi_form == '' || experience_form == '' || email_form == '') {
                 let text = "Masih terdapat data yang kosong";
                 Swal.fire({

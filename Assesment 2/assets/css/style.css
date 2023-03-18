@@ -146,23 +146,6 @@ body{
 }
 /* ====================== */
 
-.message{
-    width: 30%;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    min-width: 200px;
-    padding: 8px 15px;
-}
-.message.danger{
-    background-color: red;
-    color: white;
-}
-.message.success{
-    background-color: green;
-    color: white;
-}
-
 /* Card Info */
 #card-info{
     background-color: white;
@@ -170,6 +153,9 @@ body{
     padding: 0 50px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#card-info #edit {
+    margin: 8px 0;
 }
 #card-info .kiri{
     display: flex;
@@ -267,6 +253,9 @@ body{
     #card-info .kiri{
         display: block;
     }
+    #card-info #edit {
+        margin: 5px 0;
+    }
     #card-info .kiri .identitas{
         padding: 30px;
         margin-right: 10px;
@@ -359,11 +348,12 @@ body{
     }
     #card-info .kanan{
         height: 130px;
-        margin-top: 100px;
-        padding: 50px 0;
+        margin-top: 175px;
+        padding: 10px 0 40px 0;
     }
     #card-info .kanan table{
-        font-size: 12px;
+        font-size: 11px;
+        margin-top: 15px;
     }
     #card-info .kanan table th,
     #card-info .kanan table td{
@@ -394,6 +384,8 @@ body{
     }
     #card-info .kanan{
         height: 80px;
+        margin-top: 140px;
+        padding: 10px 0 45px 0;
     }
     #card-info .kanan table{
         font-size: 11px;
