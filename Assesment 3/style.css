@@ -110,3 +110,25 @@ body{
     font-weight: 700;
     font-size: 22px;
 }
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 300px;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .pencarian input {
+        width: 100px;
+    }
+    .btn-search {
+        width: 70px;
+    }
+    .keterangan {
+        width: 300px;
+    }
+    .keterangan .col {
+        width: 40%;
+        height: 70px;
+        padding: 5px 8px;
+    }
+}
