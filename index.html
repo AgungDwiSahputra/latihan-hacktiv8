@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Covid-19 | Agung Dwi Sahputra</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>COVID-19 TRACKER</h1>
+        <p>Code by Agung Dwi Sahputra</p>
+        <div id="alert" class="alert hidden">
+            <span><b>Gagal. </b> <span id="pesan">....</span></span>
+        </div>
+        <div class="pencarian">
+            <input type="text" name="search" id="search" placeholder="Masukan nama negara ..">
+            <button class="btn-search" id="btn-search">Search</button>
+        </div>
+        <div class="keterangan">
+            <div class="col">
+                <span class="judul">Active Cases</span>
+                <span class="hasil" id="total_active">0</span>
+            </div>
+            <div class="col">
+                <span class="judul">New Cases</span>
+                <span class="hasil" id="total_new">0</span>
+            </div>
+            <div class="col">
+                <span class="judul">Recovered Cases</span>
+                <span class="hasil" id="total_recovered">0</span>
+            </div>
+            <div class="col">
+                <span class="judul">Total Cases</span>
+                <span class="hasil" id="total_cases">0</span>
+            </div>
+            <div class="col">
+                <span class="judul">Total Deaths</span>
+                <span class="hasil" id="total_deaths">0</span>
+            </div>
+            <div class="col">
+                <span class="judul">Total Tests</span>
+                <span class="hasil" id="total_tests">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+</body>
+</html>
