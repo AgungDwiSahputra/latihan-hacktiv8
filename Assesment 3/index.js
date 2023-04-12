@@ -50,7 +50,7 @@ function getData(country) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '4f699587abmsh58b1b25ea3f609ap155e9bjsn24ed03771479',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
         }
     };
